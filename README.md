@@ -272,6 +272,65 @@
 | 9 |                                                      Conclusion                                                        |                                                                                                                       Keep S3 as private as possible                                                                                                                     |                       ------/------                          |
 
 
+### 4. Build CI/CD Pipelines, Monitoring & Logging
+
+#### Lesson-1: Continuous Integration and Continuous Deployment
+| No |                                                        Lesson                                                         |                                                                                                                                  Notes                                                                                                                                   |                         Link/Source                          |
+|:--:|:---------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+| 1 |                                                     Introduction                                                       |                                                                                                                    Instructor background & experience                                                                                                                    |                       ------/------                          |
+| 2 |                                                   Course Overview                                                      |                                                                                                                  Course objectives, GitHub repo, Project overview, Lesson objectives                                                                                     |                       ------/------                          |
+| 3 |                                               Interview: Career Skills                                                 |                                                                                                                    Instructor Olin Wread's career experiences                                                                                                            |                       ------/------                          |
+| 4 |                                                    Jenkins Intro                                                       |                                                                                                                  Jenkins, Jenkins Pipeline, Jenkinsfile (Declarative and Scripted)                                                                                       |                        [126 - 129]                           |
+| 5 |                                                      AWS Setup                                                         |                                                                                                                       Creat customize policy, group, user                                                                                                                |                       ------/------                          |
+| 6 |                                                 IAM and EC2 Setup                                                      |                                                                                                                Policy, Group, User, Console login, EC2 lanuch with 8080 port, EC2 stop/image                                                                             |                        [130 - 131]                           |
+| 7 |                                                   AWS Setup Quiz                                                       |                                                                                                                        IAM, AWS Billing for free tier                                                                                                                    |                       ------/------                          |
+| 8 |                                                Installing Jenkins                                                      |                                                                                                                 Install Jenkins on Ubuntu, Logging into Jenkins using GUI                                                                                                |                           [132]                              |
+| 9 |                                       Install Blue Ocean Plugin into Jenkins                                           |                                                                                                                Jenkins Plugins, Blue Ocean Plugin, Configure Jenkins for Enterprise Authentication with LDAP                                                             |                        [133 - 134]                           |
+|10 |                                                  Jenkins Quiz                                                          |                                                                                                                 Language of Jenkins written - Java, Jenkinsfile                                                                                                          |                       ------/------                          |
+|11 |                                          What is CI/CD and a Pipeline?                                                 |                                                                                                                 Background - DevOps, CI/CD, CI/CD pipeline                                                                                                               |                       ------/------                          |
+|12 |                                                   Pipelines                                                            |                                                                                                                 Is a set of tools and processes to automate the CI/CD                                                                                                    |                       ------/------                          |
+|13 |                                         Review and Practice Exercises                                                  |                                                                                                                   Key Skills and Concepts from CI / CD Lesson                                                                                                            |                       ------/------                          |
+
+
+#### Lesson-2: Continuous Integration and Continuous Deployment Strategies
+| No |                                                        Lesson                                                         |                                                                                                                                  Notes                                                                                                                                   |                         Link/Source                          |
+|:--:|:---------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+| 1 |                                              Install AWS Plugin into Jenkins                                           |                                                                                                                    "Pipeline: AWS Steps" pluging install in jenkins                                                                                                      |                       ------/------                          |
+| 2 |                                                   Intro to Blue Ocean                                                  |                                                                                                                  Basic description of Blue ocean                                                                                                                         |                           [135]                              |
+| 3 |                                               Adding a Repo to a Pipeline                                              |                                                                                                                   Create a blue ocean pipeline using GitHub                                                                                                              |                           [136]                              |
+| 4 |                                                   Multiple Pipelines                                                   |                                                                                                                 Multiple Pipelines in Blue Ocean, Multi-Pipeline Summary                                                                                                 |                        [137 - 138]                           |
+| 5 |                                                   Pipeline Triggers                                                    |                                                                                                                 Setting up a trigger, Pipeline Triggers Walkthrough                                                                                                      |                       ------/------                          |
+| 6 |                                                   Pipeline Testing                                                     |                                                                                                                ```tid``` install, ```index.html``` bug fix, Remove security scan in Jenkinfile and change region & bucket name                                           |                       ------/------                          |
+| 7 |                                              Security Testing with Aqua                                                |                                                                                                                Aqua MicroScanner token setup, Aqua MicroScanner plugin install, Docker install                                                                           |                        [139 - 144]                           |
+| 8 |                                                Deployment Strategies                                                   |                                                                                                                 Deployment Strategies, Blue Green Deployment & Strategy, Blue/Green Deployment IAM Policy                                                                |                       ------/------                          |
+| 9 |                                               Deployment Big Picture                                                   |                                                                                                                           Never used manual changes                                                                                                                      |                       ------/------                          |
+|10 |                                                 Deployment Practice                                                    |                                                                                                                  Summary of the lesson, Practice exercise                                                                                                                |                       ------/------                          |
+
+
+#### Lesson-3: Ansible and Configuration Management
+| No |                                                        Lesson                                                         |                                                                                                                                  Notes                                                                                                                                   |                         Link/Source                          |
+|:--:|:---------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+| 1 |                                                      Ansible Intro                                                     |                                                                                                                Configuration management language, Leverages YAML & JSON, Agent-less language, Written in Python, Ruby and Powershell                                     |                        [145 - 146]                           |
+| 2 |                                                        Templates                                                       |                                                                                                                  Ansible Templates, Apply Template                                                                                                                       |                       ------/------                          |
+| 3 |                                                        Services                                                        |                                                                                                                   Systemd, Service start-stop-enable-disable                                                                                                             |                       ------/------                          |
+| 4 |                                                      Conditionals                                                      |                                                                                                                Conditionals Register, Built-in Ansible Variables, Built-in fact ```os_family```                                                                          |                       ------/------                          |
+| 5 |                                                         Roles                                                          |                                                                                                                       A collection task bundled together                                                                                                                 |                       ------/------                          |
+| 6 |                                                    Running Ansible                                                     |                                                                                                                Playbooks, Running Ansible Playbook with Inventory, Creating an ansible inventory file                                                                    |                       ------/------                          |
+| 7 |                                                Ansible Review & Quiz                                                   |                                                                                                                              Ansible Review                                                                                                                              |                        [148 - 152]                           |
+| 8 |                                                  Ansible Practice                                                      |                                                                                                                       Practice Exercise on Ansible                                                                                                                       |                       ------/------                          |
+
+
+#### Lesson-4: Monitoring
+| No |                                                        Lesson                                                         |                                                                                                                                  Notes                                                                                                                                   |                         Link/Source                          |
+|:--:|:---------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+| 1 |                                                     Monitoring Intro                                                   |                                                                                                                       Monitoring necessity, Lesson objective                                                                                                             |                       ------/------                          |
+| 2 |                                               Monitoring Using Prometheus                                              |                                                                                                                 Install Ansible & tox, Clone Ansible-prometheus, Setup role, Create main.yaml & inventory file, Run playbook, Install node exporter and configure        |                           [153]                              |
+| 3 |                                                    Prometheus Quiz                                                     |                                                                                                                  HTTP protocol is used for Prometheus monitoring                                                                                                         |                       ------/------                          |
+| 4 |                                                       Grafana                                                          |                                                                                                                Install and Configure Grafana for Prometheus, Allow 3000 port, Create data sources                                                                        |                       ------/------                          |
+| 5 |                                                  Monitoring and ELK                                                    |                                                                                                                 Elasticsearch, Logstash, Kibana                                                                                                                          |                       ------/------                          |
+| 6 |                                                Installing ELK Services                                                 |                                                                                                                ELK Stack Quickstart, Elasticsearch Installation, Install and Configure Kibana, Install and Configure Logstash                                            |                       ------/------                          |
+| 7 |                                             Monitoring Review & Practice                                               |                                                                                                                Pro Tips on Using the ELK Stack, Practice Exercise                                                                                                        |                           [154]                              |
+
 
 ## Extracurricular
 
@@ -305,37 +364,37 @@
 
 ## Resources
 
-* [1][RFC 6890 - Special-Purpose IP Address Registries, April 2013](https://tools.ietf.org/html/rfc6890)
-* [2][RFC 1918 - Address Allocation for Private Internets, February 1996](https://tools.ietf.org/html/rfc1918)
-* [3][Wikipedia - IPv4 Address Exhaustion](https://en.wikipedia.org/wiki/IPv4_address_exhaustion)
-* [4][IP Address to Binary](https://www.browserling.com/tools/ip-to-bin)
-* [5][Binary to IP Address](https://www.browserling.com/tools/bin-to-ip)
-* [6][Subnetworks](https://en.wikipedia.org/wiki/Subnetwork)
-* [7][CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-* [8][RFC IPv4](https://tools.ietf.org/html/rfc1878)
-* [9][RFC IPv6](https://tools.ietf.org/html/rfc5942)
-* [10][RFC CIDR](https://www.rfc-editor.org/rfc/rfc1519.txt)
-* [11][OSI model](https://en.wikipedia.org/wiki/OSI_model)
-* [12][The OSI Model Demystified](https://www.youtube.com/watch?v=HEEnLZV2wGI)
-* [13][The 7 Layers of the OSI Model](https://www.webopedia.com/quick_ref/OSI_Layers.asp)
-* [14][Packet Switching](https://en.wikipedia.org/wiki/Packet_switching)
-* [15][Network Switches](https://en.wikipedia.org/wiki/Network_switch)
-* [16][Spanning Tree Protocol](https://en.wikipedia.org/wiki/Spanning_Tree_Protocol)
-* [17][Wikipedia article on Ethernet frames](https://en.wikipedia.org/wiki/Ethernet_frame)
-* [18][A Networking Frame](https://en.wikipedia.org/wiki/Frame_(networking)
-* [19][What is my ip](https://www.whatismyip.com/)
-* [20][IPv6 test site](http://test-ipv6.com/)
-* [21][TCP/IP and Subnet Masking](https://www.youtube.com/watch?v=EkNq4TrHP_U)
-* [22][Wikipedia article on NAT](https://en.wikipedia.org/wiki/Network_address_translation)
-* [23][Wireshark User Guide](https://www.wireshark.org/docs/wsug_html_chunked/)
-* [24][Wireshark Wiki](https://en.wikipedia.org/wiki/Wireshark)
-* [25][Wireshark link for download](https://www.wireshark.org/download.html)
-* [26][FQDN](http://www.rfc-base.org/rfc-4703.html)
-* [27][Domain Name System IANA Considerations 2011](https://www.rfc-archive.org/getrfc.php?rfc=6195)
-* [28][Nameservers for IPv4 and IPv6 Reverse Zones (2010)](https://www.rfc-archive.org/getrfc.php?rfc=5855)
-* [29][Wikipedia article on the Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)
-* [30][Wikipedia article on DNS record types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
-* [31][Load Balancing](https://en.wikipedia.org/wiki/Load_balancing_(computing))
+* [1] [RFC 6890 - Special-Purpose IP Address Registries, April 2013](https://tools.ietf.org/html/rfc6890)
+* [2] [RFC 1918 - Address Allocation for Private Internets, February 1996](https://tools.ietf.org/html/rfc1918)
+* [3] [Wikipedia - IPv4 Address Exhaustion](https://en.wikipedia.org/wiki/IPv4_address_exhaustion)
+* [4] [IP Address to Binary](https://www.browserling.com/tools/ip-to-bin)
+* [5] [Binary to IP Address](https://www.browserling.com/tools/bin-to-ip)
+* [6] [Subnetworks](https://en.wikipedia.org/wiki/Subnetwork)
+* [7] [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+* [8] [RFC IPv4](https://tools.ietf.org/html/rfc1878)
+* [9] [RFC IPv6](https://tools.ietf.org/html/rfc5942)
+* [10] [RFC CIDR](https://www.rfc-editor.org/rfc/rfc1519.txt)
+* [11] [OSI model](https://en.wikipedia.org/wiki/OSI_model)
+* [12] [The OSI Model Demystified](https://www.youtube.com/watch?v=HEEnLZV2wGI)
+* [13] [The 7 Layers of the OSI Model](https://www.webopedia.com/quick_ref/OSI_Layers.asp)
+* [14] [Packet Switching](https://en.wikipedia.org/wiki/Packet_switching)
+* [15] [Network Switches](https://en.wikipedia.org/wiki/Network_switch)
+* [16] [Spanning Tree Protocol](https://en.wikipedia.org/wiki/Spanning_Tree_Protocol)
+* [17] [Wikipedia article on Ethernet frames](https://en.wikipedia.org/wiki/Ethernet_frame)
+* [18] [A Networking Frame](https://en.wikipedia.org/wiki/Frame_(networking)
+* [19] [What is my ip](https://www.whatismyip.com/)
+* [20] [IPv6 test site](http://test-ipv6.com/)
+* [21] [TCP/IP and Subnet Masking](https://www.youtube.com/watch?v=EkNq4TrHP_U)
+* [22] [Wikipedia article on NAT](https://en.wikipedia.org/wiki/Network_address_translation)
+* [23] [Wireshark User Guide](https://www.wireshark.org/docs/wsug_html_chunked/)
+* [24] [Wireshark Wiki](https://en.wikipedia.org/wiki/Wireshark)
+* [25] [Wireshark link for download](https://www.wireshark.org/download.html)
+* [26] [FQDN](http://www.rfc-base.org/rfc-4703.html)
+* [27] [Domain Name System IANA Considerations 2011](https://www.rfc-archive.org/getrfc.php?rfc=6195)
+* [28] [Nameservers for IPv4 and IPv6 Reverse Zones (2010)](https://www.rfc-archive.org/getrfc.php?rfc=5855)
+* [29] [Wikipedia article on the Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)
+* [30] [Wikipedia article on DNS record types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
+* [31] [Load Balancing](https://en.wikipedia.org/wiki/Load_balancing_(computing))
 * [32] [Cloud Computing](https://aws.amazon.com/what-is-cloud-computing/)
 * [33] [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
 * [34] [AWS Cloud Products](https://aws.amazon.com/products/)
@@ -430,3 +489,32 @@
 * [123] [TargetGroups Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html)
 * [124] [Health Checks for Your TargetGroups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
 * [125] [Retention Policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
+* [126] [Jenkins User Documentation](https://jenkins.io/doc/)
+* [127] [Comparison of continuous integration software](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
+* [128] [ND9991 - C3 - Build CI/CD Pipelines, Monitoring, and Logging](https://github.com/udacity/nd9991-c3-Build-CI-CD-Pipelines-Monitoring-and-Logging-v1)
+* [129] [Set Up a CI/CD Pipeline on AWS](https://aws.amazon.com/getting-started/projects/set-up-ci-cd-pipeline/?trk=gs_card)
+* [130] [AWS Free Tier Limits](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-limits.html)
+* [131] [How to launch an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance)
+* [132] [Jenkins Debian packages](https://pkg.jenkins.io/debian-stable/)
+* [133] [Blue Ocean](https://jenkins.io/doc/book/blueocean/)
+* [134] [Create a Pipeline in Blue Ocean](https://jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/)
+* [135] [Documentation for setting up a Pipeline using Blue Ocean ](https://jenkins.io/doc/book/blueocean/creating-pipelines/)
+* [136] [Create your Pipeline project in Blue Ocean](https://jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/#fork-sample-repository)
+* [137] [Tutorial to Create a Multibranch Pipeline Project in Blue Ocean](https://jenkins.io/doc/tutorials/build-a-multibranch-pipeline-project/#create-your-pipeline-project-in-blue-ocean)
+* [138] [Pipeline example](https://jenkins.io/doc/book/pipeline/#pipeline-example)
+* [139] [Aqua MicroScanner Signup](https://microscanner.aquasec.com/signup)
+* [140] [Security testing plugins available for Jenkins](https://plugins.jenkins.io/ui/search/?sort=relevance&categories=buildManagement&labels=&view=Tiles&page=1&query=security%20testing)
+* [141] [Tutorial to run JMeter with Jenkins](https://wiki.jenkins.io/display/JENKINS/How+to+run+JMeter+with+Jenkins)
+* [142] [Performance plugin](https://plugins.jenkins.io/performance/)
+* [143] [JUnit plugin](https://plugins.jenkins.io/junit/)
+* [144] [JUnit Document](https://jenkins.io/doc/pipeline/steps/junit/)
+* [145] [Idempotence](https://en.wikipedia.org/wiki/Idempotence)
+* [146] [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
+* [147] [Working With Playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html)
+* [148] [Ansible systemd](https://docs.ansible.com/ansible/latest/modules/systemd_module.html)
+* [149] [Ansible conditionals](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html)
+* [150] [Ansible package installs](https://docs.ansible.com/ansible/2.5/modules/package_module.html)
+* [151] [Ansible inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
+* [152] [Ansible roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
+* [153] [Prometheus](https://en.wikipedia.org/wiki/Prometheus)
+* [154] [How to set up alerts and notifications with ELK stack](https://www.elastic.co/what-is/elasticsearch-alerting)
